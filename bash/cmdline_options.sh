@@ -1,5 +1,13 @@
 #!/bin/sh
 
+# print all arguments w/o script name
+echo $@
+
+# loop through all arguments
+for i; do
+   echo $i
+done
+
 # space separated style: ./myscript.sh -e conf -s /etc -l /usr/lib /etc/hosts
 POSITIONAL=()
 while [[ $# -gt 0 ]]
