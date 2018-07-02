@@ -3,7 +3,7 @@
 # add googletest as a submodule in lib folder:
 #   git submodule add https://github.com/google/googletest lib/googletest
 
-git submodule init
+git submodule update --init --recursive
 
 if [ ! -d build ]; then
   mkdir build
